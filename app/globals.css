@@ -1,0 +1,491 @@
+/** @format */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "KatahdinRound";
+  src: url("./fonts/KatahdinRound.otf");
+}
+@font-face {
+  font-family: "Aeonik-Regular";
+  src: url("./fonts/aeonik/Aeonik-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Aeonik-Medium";
+  src: url("./fonts/aeonik/Aeonik-Medium.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Aeonik-Bold";
+  src: url("./fonts/aeonik/Aeonik-Bold.otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "CabinetGrotesk-Regular";
+  src: url("./fonts/CabinetGrotesk/CabinetGrotesk-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "CabinetGrotesk-Medium";
+  src: url("./fonts/CabinetGrotesk/CabinetGrotesk-Medium.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "CabinetGrotesk-Bold";
+  src: url("./fonts/CabinetGrotesk/CabinetGrotesk-Bold.otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "CabinetGrotesk-ExtraBold";
+  src: url("./fonts/CabinetGrotesk/CabinetGrotesk-Extrabold.otf");
+  font-weight: 800;
+}
+
+:root {
+  --black: #010101;
+  --background: #ffffff;
+  --foreground: #171717;
+  --pink: #ef5498;
+  --softpink: #ffeeee;
+}
+
+body {
+  font-family: "CabinetGrotesk-Regular";
+  left: 0;
+  top: 0;
+  color: var(--black);
+  background-color: var(--background);
+}
+.navigation-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.discount-nav {
+  height: 44px;
+  width: 100%;
+  background-color: var(--black);
+  position: relative;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.discount-text {
+  font-family: "Aeonik-Medium";
+  font-size: 16px;
+  font-weight: 500;
+}
+.logo-nav {
+  font-family: "CabinetGrotesk-Bold";
+  font-size: 32px;
+  line-height: 100%;
+}
+.menu-list {
+  font-family: "Aeonik-Medium";
+  font-size: 16px;
+}
+.bold {
+  top: 11%;
+  left: 26%;
+}
+.bebold {
+  right: 16%;
+  top: 11%;
+}
+.fashionsvg {
+  top: 50%;
+}
+.adorasvg {
+  top: 70%;
+  right: 0%;
+}
+.hero-text {
+  z-index: -6;
+}
+.hero-text h1 {
+  font-family: "CabinetGrotesk-Bold";
+  font-size: 450px;
+  line-height: 100%;
+  color: var(--black);
+}
+.animate-scroll span {
+  font-family: "CabinetGrotesk-Regular";
+  font-size: 36px;
+  line-height: 140%;
+  color: white;
+}
+.second-item p {
+  font-size: 46px;
+  line-height: 140%;
+  text-align: center;
+  font-family: "CabinetGrotesk-Regular";
+}
+.card-content {
+  font-family: "Aeonik-Medium";
+}
+.card-content-left {
+  transform: translateY(60%);
+  transition: transform 0.4s ease;
+}
+.card-content-left p {
+  opacity: 0;
+}
+.card-content:hover .card-content-left {
+  transform: translateY(0%);
+}
+.card-content:hover .card-content-left p {
+  opacity: 1;
+}
+.card-layer {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+  transform: translateY(20%);
+}
+.card-content-top h1 {
+  font-family: "CabinetGrotesk-Bold";
+  font-size: 32px;
+  color: white;
+}
+.card-content p {
+  font-family: "Aeonik-Regular";
+  font-size: 16px;
+  line-height: 140%;
+}
+.card-content-top span {
+  font-family: "CabinetGrotesk-Medium";
+  font-size: 32px;
+  color: white;
+}
+.card-newdrop:hover .imgfirst {
+  opacity: 0;
+}
+.imgfirst .card-newdrop:hover .imghover {
+  opacity: 1;
+}
+.arrow-card {
+  width: 56px;
+  height: 56px;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.title-content h1 {
+  font-family: "CabinetGrotesk-Medium";
+  font-size: 86px;
+  line-height: 140%;
+}
+.title-right {
+  width: 413px;
+}
+.title-right p {
+  font-family: "Aeonik-Regular";
+  font-size: 16px;
+  line-height: 140%;
+  color: black;
+}
+.title-right a {
+  font-family: "Aeonik-Regular";
+  font-size: 16px;
+  line-height: 140%;
+  text-decoration: none;
+  color: black;
+}
+.newdrop-text p {
+  font-family: "Aeonik-Medium";
+}
+.category-card {
+  width: 100%;
+  height: 100%;
+}
+.category-content h2 {
+  font-family: "CabinetGrotesk-Medium";
+  font-size: 46px;
+  line-height: 140%;
+}
+.category-content button {
+  font-family: "Aeonik-Regular";
+  font-size: 18px;
+  border-radius: 100px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+}
+.collaboration {
+  background-color: #fee;
+}
+.collabtitle h1 {
+  font-family: "CabinetGrotesk-Bold";
+  font-size: 32px;
+  color: black;
+}
+.collabtitle span {
+  font-family: "CabinetGrotesk-Regular";
+  font-size: 32px;
+  color: black;
+}
+.collab-text h1 {
+  font-family: "CabinetGrotesk-Bold";
+  font-size: 72px;
+  color: black;
+  text-align: center;
+  line-height: 120%;
+}
+.collab-text p {
+  text-align: center;
+  width: 70%;
+  font-family: "Aeonik-Regular";
+  font-size: 24px;
+  line-height: 140%;
+}
+.collab-btn button {
+  border-radius: 100px;
+  border: 1px solid var(--primary-secondary-primary-black, #000);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+}
+.discount-section {
+  height: auto;
+}
+.bg-discount {
+  background-image: url("./images/discountandfooter/discount-cta.png");
+  background-size: cover;
+  background-position: center;
+}
+.discount-content p {
+  font-family: "Aeonik-Regular";
+  font-size: 24px;
+  line-height: 140%;
+  color: white;
+  width: 43%;
+}
+.discount-content button {
+  border-radius: 100px;
+  border: 1px solid var(--primary-secondary-secondary-white, #fff);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  color: white;
+}
+.discount-content .title h2 {
+  font-family: "CabinetGrotesk-Bold";
+  font-size: 46px;
+  line-height: 140%;
+  color: white;
+}
+.discount-content .title h1 {
+  font-family: "CabinetGrotesk-ExtraBold";
+  font-size: 62px;
+  line-height: 140%;
+  color: white;
+}
+.discount-content .title h3 {
+  font-family: "CabinetGrotesk-Bold";
+  font-size: 40px;
+  line-height: 140%;
+  color: white;
+}
+/* Clueless */
+.clueless-nav li {
+  color: white;
+  text-decoration: none;
+  font-family: "KatahdinRound";
+  font-size: 16px;
+  font-weight: 400;
+}
+.cluelesscontent {
+  height: 100%;
+  flex: 1;
+}
+.cluelesscontent {
+  flex: 1;
+  background: palevioletred;
+}
+.cluelesscontent > div {
+  width: 100%;
+  height: 100%;
+  background-size: 50%;
+  display: flex;
+  background-image: url("./images/collaboration/LeopardIMG.png");
+  justify-content: center;
+}
+.bigBtn {
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  border-left: 3px solid #000;
+  background: #9da2a3;
+  font-family: "KatahdinRound";
+  padding: 4px 8px;
+  font-size: 16px;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
+  align-self: end;
+}
+
+.smallBtn:focus,
+.smallBtn:hover,
+.bigBtn:active,
+.carouselBtn:active {
+  background: #3330c9;
+}
+.smallBtn:focus,
+.smallBtn:hover,
+.bigBtn:active,
+.carouselBtn:active {
+  text-shadow: -0.2vw -0.1vw gray;
+  border-bottom-color: #000;
+  border-left-color: #a6b3ff;
+  border-right-color: #000;
+  border-top-color: #a6b3ff;
+}
+.smallBtn,
+.bigBtn,
+.carouselBtn {
+  cursor: pointer;
+}
+#clothesDiv {
+  height: 100%;
+  width: 32vw;
+}
+#topCarousel,
+#bottomCarousel {
+  flex: 1;
+  width: 100%;
+  background: white;
+}
+#topCarousel,
+#bottomCarousel,
+.carouselBtn {
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  border-left: 3px solid #000;
+  background: #9da2a3;
+}
+.carouselContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.carouselImg {
+  height: 70%;
+  width: 70%;
+  object-fit: contain;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carouselBtnDiv {
+  width: 100%;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+}
+.carouselBtn {
+  background: #91919d;
+  font-size: 1.5rem;
+  padding: 3px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carouselBtn:nth-of-type(odd) {
+  flex: 2;
+}
+
+.carouselBtn:nth-of-type(even) {
+  flex: 1.5;
+}
+#overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url("https://i.pinimg.com/736x/45/53/92/4553926e62fdb7a778750762128d2a93.jpg");
+  background-size: cover;
+  mix-blend-mode: multiply;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 3;
+}
+
+#popUp,
+#popUpShadow {
+  padding-top: 2.5vw;
+  position: absolute;
+  width: 73vw;
+  height: 10vw;
+  left: 50%;
+  top: 50%;
+}
+
+#popUp {
+  background-color: white;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11vw;
+  outline: 0.5vmin solid black;
+  z-index: 2;
+}
+
+#popUpShadow {
+  background-color: black;
+  transform: translate(-48%, -40%);
+  opacity: 0.8;
+  z-index: 1;
+}
+.collab-bottom {
+  height: 1018px;
+  width: 100%;
+}
+.clueless-footer ul li {
+  text-decoration: none;
+  font-family: "KatahdinRound";
+  font-size: 16px;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer-list h1 {
+  color: #aaaaaa;
+  font-family: "Aeonik-Medium";
+  font-size: 20px;
+  line-height: 140%;
+}
+.footer-list p {
+  color: white;
+  font-family: "Aeonik-Regular";
+  font-size: 20px;
+  line-height: 140%;
+}
+.bottom-footer h1 {
+  width: 45%;
+  color: white;
+  font-size: 24px;
+  font-family: "Aeonik-Medium";
+}
+.left-footer {
+  width: 70%;
+}
+
+.right-footer {
+  width: 55%;
+  height: 100%;
+}
+.input-email {
+  border-bottom: 1px solid white;
+}
