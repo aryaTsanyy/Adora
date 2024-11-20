@@ -69,12 +69,12 @@ export default function NavigationBar() {
               adora.
             </a>
           </div>
-          <div className="absolute inset-y-0 mr-6 flex items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0 gap-5">
+          <div className="absolute inset-y-0 mr-6 flex items-center right-0 sm:static sm:inset-auto sm:ml-6 sm:pr-0 gap-5">
             <button className="search-nav">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <g clip-path="url(#clip0_2383_276)">
-                  <path d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M15.8037 15.8035L21.0003 21" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                <g clipPath="url(#clip0_2383_276)">
+                  <path d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z" stroke="black" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M15.8037 15.8035L21.0003 21" stroke="black" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                 </g>
                 <defs>
                   <clipPath id="clip0_2383_276">
@@ -86,20 +86,20 @@ export default function NavigationBar() {
             </button>
             <button className="notification">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <g clip-path="url(#clip0_2383_280)">
+                <g clipPath="url(#clip0_2383_280)">
                   <path
                     d="M20.25 4.5H3.75C3.33579 4.5 3 4.83579 3 5.25V18.75C3 19.1642 3.33579 19.5 3.75 19.5H20.25C20.6642 19.5 21 19.1642 21 18.75V5.25C21 4.83579 20.6642 4.5 20.25 4.5Z"
                     stroke="black"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M15.75 8.25C15.75 9.24456 15.3549 10.1984 14.6517 10.9017C13.9484 11.6049 12.9946 12 12 12C11.0054 12 10.0516 11.6049 9.34835 10.9017C8.64509 10.1984 8.25 9.24456 8.25 8.25"
                     stroke="black"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </g>
                 <defs>
@@ -116,9 +116,9 @@ export default function NavigationBar() {
                   <span className="absolute -inset-1.5" />
                   <span className="sr-only">Open user menu</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <g clip-path="url(#clip0_2383_284)">
-                      <path d="M12 15C15.3137 15 18 12.3137 18 9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9C6 12.3137 8.68629 15 12 15Z" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M3 20.25C4.81594 17.1122 8.11406 15 12 15C15.8859 15 19.1841 17.1122 21 20.25" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                    <g clipPath="url(#clip0_2383_284)">
+                      <path d="M12 15C15.3137 15 18 12.3137 18 9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9C6 12.3137 8.68629 15 12 15Z" stroke="black" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M3 20.25C4.81594 17.1122 8.11406 15 12 15C15.8859 15 19.1841 17.1122 21 20.25" stroke="black" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                     </g>
                     <defs>
                       <clipPath id="clip0_2383_284">
@@ -153,7 +153,7 @@ export default function NavigationBar() {
         </motion.div>
       </div>
 
-      <DisclosurePanel className="sm:hidden">
+      <DisclosurePanel className="sm:hidden z-20">
         <div className="space-y-1 px-2 pb-3 pt-2">
           {navigation.map((item) => (
             <DisclosureButton

@@ -6,7 +6,7 @@ import * as Second from "@/app/images/second";
 
 const card = () => {
   return (
-    <div className="card-containerflex gap-4">
+    <div className="card-container flex gap-4">
       {/* <!-- Left Card --> */}
       <div className="card-content relative w-full md:w-1/2 overflow-hidden">
         <Image src={Second.Card1} alt="Left Collection" className="w-full h-full object-cover rounded-md" />

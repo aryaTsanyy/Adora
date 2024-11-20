@@ -100,6 +100,8 @@ body {
 }
 .bebold {
   right: 16%;
+  height: 49px;
+  width: 110px;
   top: 11%;
 }
 .fashionsvg {
@@ -346,6 +348,71 @@ body {
   color: white;
 }
 /* Clueless */
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.carousel-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid #333;
+  border-radius: 10px;
+}
+
+.prev-btn,
+.next-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  padding: 0 1rem;
+}
+
+.popup.visible {
+  opacity: 1;
+  pointer-events: all;
+}
+.prev-btn {
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  border-left: 3px solid #000;
+  background: #9da2a3;
+}
+.next-btn {
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  border-left: 3px solid #000;
+  background: #9da2a3;
+}
+.app {
+  text-align: center;
+  align-items: end;
+  justify-content: center;
+}
+
+.dress-me-btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 3px solid #000;
+  background: #9da2a3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.dress-me-btn:hover {
+  background-color: #3330c9;
+}
+
+/* test */
 .clueless-nav li {
   color: white;
   text-decoration: none;
@@ -472,7 +539,11 @@ body {
   pointer-events: none;
   z-index: 3;
 }
-
+.popup {
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+}
 #popUp,
 #popUpShadow {
   padding-top: 2.5vw;
@@ -485,11 +556,12 @@ body {
 
 #popUp {
   background-color: white;
-  transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 11vw;
+  color: white;
+  font-size: 40px;
   outline: 0.5vmin solid black;
   z-index: 2;
 }
@@ -527,7 +599,7 @@ body {
   line-height: 140%;
 }
 .bottom-footer h1 {
-  width: 45%;
+  width: 100%;
   color: white;
   font-size: 24px;
   font-family: "Aeonik-Medium";
@@ -609,6 +681,7 @@ body {
   .fashionsvg {
     z-index: -1;
     top: -25%;
+    height: 200px;
   }
   .frame-heroimg img {
     align-items: center;
@@ -655,9 +728,19 @@ body {
   }
   .left-footer {
     gap: 20px;
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .top-footer {
+    display: flex;
+    align-items: center;
+    padding-right: 0px;
+    justify-content: space-between;
   }
   .footer-list {
     gap: 8px;
+    width: 100%;
   }
   .footer-list h1 {
     width: 100%;
@@ -665,5 +748,37 @@ body {
   }
   .footer-list p {
     font-size: 10px;
+  }
+  .bottom-footer h1 {
+    font-size: 18px;
+  }
+  .right-footer {
+    width: 100%;
+  }
+  .right-footer img {
+    position: static;
+    width: 100%;
+  }
+  .rightfooterContent {
+    gap: 0px;
+  }
+  .rightfooterContent h1 {
+    font-size: 14px;
+  }
+  .rightfooterContent svg {
+    height: 20px;
+  }
+  .discount-nav {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .discount-nav p {
+    font-size: 12px;
+  }
+  .search-nav {
+    display: none;
+  }
+  .notification {
+    display: none;
   }
 }

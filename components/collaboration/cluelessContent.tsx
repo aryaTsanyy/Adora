@@ -233,7 +233,7 @@ const cluelessContent = () => {
             </span>
           </div>
         </div>
-        <div className="bigBtn" id="dressMeBtn">
+        <div className="bigBtn z-10" id="dressMeBtn">
           DRESS ME
         </div>
       </div>
