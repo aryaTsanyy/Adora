@@ -10,9 +10,9 @@ type CarouselProps = {
 };
 
 const CluelessCarousel: React.FC<CarouselProps> = ({ images, isTop, currentIndex, setIndex }) => {
-  const clickSound = new Audio("https://github.com/praxeds/codepen-chers-closet/blob/f5947469f008c723b9b2aa5be51f2a8cfac0c66a/assets/audio/lclick-13694.mp3?raw=true");
   const nextImg = () => {
     setIndex((currentIndex) => {
+      const clickSound = new Audio("https://github.com/praxeds/codepen-chers-closet/blob/f5947469f008c723b9b2aa5be51f2a8cfac0c66a/assets/audio/lclick-13694.mp3?raw=true");
       clickSound.play(); // Memutar suara klik
       clickSound.currentTime = 0; // Reset suara ke awal sebelum diputar lagi
       return (currentIndex + 1) % images.length;
@@ -21,6 +21,7 @@ const CluelessCarousel: React.FC<CarouselProps> = ({ images, isTop, currentIndex
   // Fungsi untuk memutar gambar ke belakang dan memutar suara klik
   const prevImg = () => {
     setIndex((currentIndex) => {
+      const clickSound = new Audio("https://github.com/praxeds/codepen-chers-closet/blob/f5947469f008c723b9b2aa5be51f2a8cfac0c66a/assets/audio/lclick-13694.mp3?raw=true");
       clickSound.play(); // Memutar suara klik
       clickSound.currentTime = 0; // Reset suara ke awal sebelum diputar lagi
       return (currentIndex - 1 + images.length) % images.length;
