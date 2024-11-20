@@ -17,7 +17,7 @@ const newdropCard: React.FC<ProductCardProps> = ({ imageSrc, hoverImageSrc, cate
       {/* Product Image */}
       <div className="relative w-full  frame-img">
         <Image src={imageSrc} alt={name} className="imgfirst rounded-md object-cover" />
-        <Image src={hoverImageSrc} alt={`${name} Hover`} className="imghover absolute inset-0  object-cover " />
+        <Image src={hoverImageSrc} alt={`${name} Hover`} className="imghover absolute -z-10 inset-0  rounded-md object-cover " />
       </div>
 
       {/* Product Details */}

@@ -1,4 +1,6 @@
 /** @format */
 
 import Card from "./card";
-export { Card };
+import Typer from "./typer";
+import TopSecond from "./topSecond";
+export { Card, Typer, TopSecond };

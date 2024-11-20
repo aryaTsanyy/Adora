@@ -118,6 +118,28 @@ body {
   line-height: 100%;
   color: var(--black);
 }
+.scrolling-text {
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+}
+.topSecond {
+  height: 300px;
+}
+.scroll-content {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.scroll-content span {
+  margin: 0 16px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
 .animate-scroll span {
   font-family: "CabinetGrotesk-Regular";
   font-size: 36px;
@@ -142,13 +164,18 @@ body {
 }
 .card-content:hover .card-content-left {
   transform: translateY(0%);
+  transition: transform 0.4s ease;
 }
 .card-content:hover .card-content-left p {
   opacity: 1;
 }
+.card-content:hover .card-layer {
+  transform: translateY(0%);
+  transition: transform 0.4s ease;
+}
 .card-layer {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
-  transform: translateY(20%);
+  transform: translateY(60%);
 }
 .card-content-top h1 {
   font-family: "CabinetGrotesk-Bold";
@@ -167,9 +194,15 @@ body {
 }
 .card-newdrop:hover .imgfirst {
   opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
-.imgfirst .card-newdrop:hover .imghover {
+.card-newdrop:hover .imghover {
   opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+.card-newdrop:hover {
+  transform: translateY(-5%);
+  transition: transform 0.3s ease-in-out;
 }
 .arrow-card {
   width: 56px;
@@ -205,10 +238,31 @@ body {
   width: 100%;
   height: 100%;
 }
+.category-content {
+  z-index: 10;
+}
 .category-content h2 {
   font-family: "CabinetGrotesk-Medium";
   font-size: 46px;
   line-height: 140%;
+}
+.category-card:hover .overlay-category {
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+.category-card:hover .overlay-category {
+  transform: scale(4);
+  transition: transform 0.3s ease;
+}
+.overlay-category {
+  transform: scale(0);
+  transform: translateY(100%);
+  border-radius: 100%;
+  transition: transform 0.3s ease;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(3px);
+  inset: 0;
+  z-index: 5;
 }
 .category-content button {
   font-family: "Aeonik-Regular";
@@ -484,8 +538,132 @@ body {
 
 .right-footer {
   width: 55%;
-  height: 100%;
 }
+.left-footer,
+.right-footer {
+  flex: 1; /* membuat kedua kolom tumbuh secara proporsional */
+}
+.right-footer h1 {
+  font-family: "Aeonik-Medium";
+  font-size: 24px;
+  color: white;
+}
+
 .input-email {
   border-bottom: 1px solid white;
+}
+
+/* Responsive  */
+@media (max-width: 1024px) {
+  .hero-text h1 {
+    font-size: 220px;
+  }
+
+  .frame-responsive {
+    width: 100%;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .frame-heroimg img {
+    width: 80%; /* Kurangi ukuran gambar di layar tablet */
+    max-width: 320px;
+  }
+  topSecond {
+    height: auto; /* Sesuaikan tinggi agar fleksibel */
+    flex-direction: column; /* Ubah arah tata letak menjadi vertikal */
+    gap: 2rem; /* Tambahkan jarak antar elemen */
+    margin: 0 3rem 7rem; /* Kurangi margin untuk tablet */
+    font-size: 1rem; /* Font lebih kecil untuk tablet */
+  }
+}
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 120px;
+  }
+  .bebold {
+    height: 30px;
+    width: 90px;
+    right: 20%;
+    top: 20%;
+  }
+  .bold {
+    width: 80px;
+    top: 0;
+    left: 40px;
+    height: 40px;
+  }
+
+  .hero-section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .frame-responsive {
+    width: 100%;
+  }
+  .adorasvg {
+    top: 80%;
+    left: 70%;
+    z-index: -1;
+  }
+  .fashionsvg {
+    z-index: -1;
+    top: -25%;
+  }
+  .frame-heroimg img {
+    align-items: center;
+    width: 70%; /* Ukuran lebih kecil untuk ponsel */
+    max-width: 250px;
+  }
+
+  .frame-heroimg > div {
+    margin-left: -20%;
+    gap: 5rem; /* Sesuaikan jarak antar elemen */
+  }
+  .topSecond {
+    height: auto;
+    gap: 1.5rem; /* Jarak antar elemen lebih kecil */
+    margin: 0 2rem 5rem; /* Margin lebih kecil untuk ponsel */
+    font-size: 0.875rem; /* Font kecil untuk ponsel */
+  }
+  .second-item p {
+    font-size: 24px;
+  }
+  .second-section {
+    margin: 2px 8px;
+  }
+  .topSecond svg {
+    width: 30px; /* Ukuran ikon lebih kecil */
+    height: 30px;
+  }
+  .second-section {
+    padding: 49px 8px;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .discount-content p {
+    width: 90%;
+  }
+  footer {
+    height: 100%;
+  }
+  .footerSection {
+    display: flex;
+    flex-direction: column;
+  }
+  .left-footer {
+    gap: 20px;
+  }
+  .footer-list {
+    gap: 8px;
+  }
+  .footer-list h1 {
+    width: 100%;
+    font-size: 12px;
+  }
+  .footer-list p {
+    font-size: 10px;
+  }
 }

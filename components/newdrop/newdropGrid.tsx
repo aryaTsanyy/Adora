@@ -3,7 +3,6 @@
 import React from "react";
 import NewDropCard from "./newdropCard";
 import * as NewDropIMG from "@/app/images/newdrop";
-import { NewDropHover1, NewDropHover2, NewDropHover3, NewDropHover4 } from "@/app/images/newdrop";
 
 const products = [
   {
@@ -15,21 +14,21 @@ const products = [
   },
   {
     imageSrc: NewDropIMG.NewDrop2,
-    hoverImageSrc: NewDropHover2,
+    hoverImageSrc: NewDropIMG.NewDropHover2,
     category: "Tops",
     name: "Tahlia Off Shoulder Top",
     price: "$32.00",
   },
   {
     imageSrc: NewDropIMG.NewDrop3,
-    hoverImageSrc: NewDropHover3,
+    hoverImageSrc: NewDropIMG.NewDropHover3,
     category: "Tops",
     name: "Jessy Cable Knit Oversized Sweater",
     price: "$32.00",
   },
   {
     imageSrc: NewDropIMG.NewDrop4,
-    hoverImageSrc: NewDropHover4,
+    hoverImageSrc: NewDropIMG.NewDropHover4,
     category: "Dresses",
     name: "Get Edikted Sweatshirt",
     price: "$32.00",

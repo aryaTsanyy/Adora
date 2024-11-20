@@ -16,6 +16,7 @@ const categorycard: React.FC<CategoryCardProps> = ({ title, imageUrl }) => {
         <h2 className="text-2xl font-semibold mb-2">{title}</h2>
         <button className="px-8 py-2 hover:bg-gray-200 transition">Shop Now</button>
       </div>
+      <div className="overlay-category w-full h-full absolute"></div>
     </div>
   );
 };
