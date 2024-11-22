@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <main className="overflow-hidden">
       <Navigationbar />
-      <section className="hero-section">
+      <section className="hero-section min-h-screen">
         <Hero />
         <InfiniteScrollAnimationPage />
       </section>

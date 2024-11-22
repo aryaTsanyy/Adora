@@ -51,7 +51,9 @@
   --pink: #ef5498;
   --softpink: #ffeeee;
 }
-
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "CabinetGrotesk-Regular";
   left: 0;
@@ -67,22 +69,47 @@ body {
   display: flex;
   flex-direction: row;
 }
+/* Tambahkan efek hover untuk navigasi */
+
+.menu-list::after {
+  content: "";
+  position: absolute;
+  bottom: -4px; /* Jarak garis ke teks */
+  left: 100%; /* Mulai dari ujung kanan */
+  width: 0;
+  height: 2px; /* Ketebalan garis */
+  background-color: black;
+  transition: all 0.3s ease; /* Animasi transisi */
+}
+
+.menu-list:hover::after {
+  left: 0;
+  width: 70%;
+}
+
+.menu-list:not(:hover)::after {
+  left: 100%;
+  width: 0;
+}
+
+.menu-list:hover {
+  color: black;
+}
 
 .discount-nav {
   height: 44px;
   width: 100%;
   background-color: var(--black);
   position: relative;
-  padding-top: 14px;
-  padding-bottom: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
 }
 .discount-text {
+  height: auto;
   font-family: "Aeonik-Medium";
-  font-size: 16px;
+  font-size: 10px;
   font-weight: 500;
 }
 .logo-nav {
@@ -93,6 +120,11 @@ body {
 .menu-list {
   font-family: "Aeonik-Medium";
   font-size: 16px;
+  transition: all 0.3s ease;
+}
+.menu-list:hover {
+  transform: translateX(-2%);
+  transition: all 0.3s ease;
 }
 .bold {
   top: 11%;
@@ -114,9 +146,20 @@ body {
 .hero-text {
   z-index: -6;
 }
+.frame-heroimg {
+  max-width: 1120px;
+  margin-left: 56px;
+  margin-right: 56px;
+}
+.frame-heroimg img {
+  width: 38%;
+}
+.frame-responsive {
+  align-items: center;
+}
 .hero-text h1 {
   font-family: "CabinetGrotesk-Bold";
-  font-size: 450px;
+  font-size: 280px;
   line-height: 100%;
   color: var(--black);
 }
@@ -126,6 +169,14 @@ body {
   background-color: black;
   color: white;
   padding: 20px 0;
+  display: flex;
+  white-space: nowrap;
+}
+.scroll-item {
+  margin: 0;
+  padding: 0;
+  gap: 12px;
+  justify-content: center;
 }
 .topSecond {
   height: 300px;
@@ -142,7 +193,7 @@ body {
   font-weight: bold;
 }
 
-.animate-scroll span {
+.scroll-item span {
   font-family: "CabinetGrotesk-Regular";
   font-size: 36px;
   line-height: 140%;
@@ -174,6 +225,15 @@ body {
 .card-content:hover .card-layer {
   transform: translateY(0%);
   transition: transform 0.4s ease;
+}
+
+.card-content:hover .card-content-right {
+  transform: translateY(-900%);
+  transition: transform 0.3s ease-in-out;
+}
+.card-content:not(:hover) .card-content-right {
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
 }
 .card-layer {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
@@ -233,6 +293,39 @@ body {
   text-decoration: none;
   color: black;
 }
+/* Atur style dasar untuk link */
+.explore-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+/* Pseudo-element untuk garis bawah */
+.explore-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 100%;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+.explore-link:hover {
+  transform: translateX(-5%);
+  transition: transform 0.3s ease-in-out;
+}
+.explore-link:hover::after {
+  left: 0;
+  width: 70%;
+}
+
+.explore-link:not(:hover)::after {
+  left: 100%;
+  width: 0;
+}
+
 .newdrop-text p {
   font-family: "Aeonik-Medium";
 }
@@ -256,6 +349,7 @@ body {
   transform: scale(4);
   transition: transform 0.3s ease;
 }
+
 .overlay-category {
   transform: scale(0);
   transform: translateY(100%);
@@ -395,6 +489,9 @@ body {
   text-align: center;
   align-items: end;
   justify-content: center;
+}
+.containerCollab {
+  max-height: 3728px;
 }
 
 .dress-me-btn {
@@ -556,17 +653,21 @@ body {
 
 #popUp {
   background-color: white;
+  font-family: "KatahdinRound";
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 11vw;
+  font-size: 40vw;
   color: white;
-  font-size: 40px;
+  font-size: 12px;
+  font-weight: 600;
   outline: 0.5vmin solid black;
-  z-index: 2;
+  z-index: 5;
 }
 
 #popUpShadow {
+  font-size: 12vw;
+  color: white;
   background-color: black;
   transform: translate(-48%, -40%);
   opacity: 0.8;
@@ -589,14 +690,34 @@ body {
 .footer-list h1 {
   color: #aaaaaa;
   font-family: "Aeonik-Medium";
-  font-size: 20px;
+  font-size: 18px;
   line-height: 140%;
 }
 .footer-list p {
   color: white;
+  position: relative;
   font-family: "Aeonik-Regular";
-  font-size: 20px;
+  font-size: 14px;
   line-height: 140%;
+}
+.footer-list p:hover {
+  cursor: pointer;
+  transform: translateX(-5%);
+  transition: transform 0.2s ease-in-out;
+}
+.footer-list p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+.footer-list p:hover::after {
+  width: 30%;
+  left: 0;
 }
 .bottom-footer h1 {
   width: 100%;
@@ -768,17 +889,37 @@ body {
   .rightfooterContent svg {
     height: 20px;
   }
-  .discount-nav {
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
   .discount-nav p {
-    font-size: 12px;
+    font-size: 8px;
   }
   .search-nav {
     display: none;
   }
   .notification {
     display: none;
+  }
+}
+
+.animate-float-slow {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

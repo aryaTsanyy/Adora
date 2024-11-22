@@ -20,27 +20,24 @@ const footerSection = () => {
           </div>
           <div className="footer-list">
             <h1>Discover</h1>
-            <p>T-shirt</p>
-            <p>Pants</p>
-            <p>Hoodie</p>
-            <p>Jacket</p>
-            <p>Footwear</p>
+            <p>About us</p>
+            <p>Our story</p>
+            <p>Blog</p>
+            <p>Style guide</p>
           </div>
           <div className="footer-list">
             <h1>Customer Care</h1>
-            <p>T-shirt</p>
-            <p>Pants</p>
-            <p>Hoodie</p>
-            <p>Jacket</p>
-            <p>Footwear</p>
+            <p>Contact us</p>
+            <p>Shipping & returns</p>
+            <p>FAQ’s</p>
+            <p>Term of service</p>
           </div>
           <div className="footer-list">
             <h1>Social Media</h1>
-            <p>T-shirt</p>
-            <p>Pants</p>
-            <p>Hoodie</p>
-            <p>Jacket</p>
-            <p>Footwear</p>
+            <p>Instagram</p>
+            <p>Facebook</p>
+            <p>Twitter</p>
+            <p>Tiktok</p>
           </div>
         </div>
         <div className="bottom-footer flex pr-12 items-end justify-between">

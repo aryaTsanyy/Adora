@@ -5,7 +5,7 @@ import { Typer } from ".";
 
 const topSecond = () => {
   return (
-    <div className="topSecond relative mx-24 mb-36 flex gap-3 items-center justify-center">
+    <div className="topSecond relative mx-24 mb-36 flex flex-col gap-3 items-center justify-center">
       <Typer />
       <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
         <g clipPath="url(#clip0_2383_215)">

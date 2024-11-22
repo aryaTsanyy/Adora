@@ -21,12 +21,12 @@ const CluelessContainer = () => {
       // Menambahkan objek Audio untuk correctSound
       const correctSound = new Audio("https://github.com/praxeds/codepen-chers-closet/blob/f5947469f008c723b9b2aa5be51f2a8cfac0c66a/assets/audio/mixkit-winning-chimes-2015.wav?raw=true");
       // Jika indeks sama, tampilkan pesan "It's a match!"
-      setPopupMessage(`It's a match! Top ${topIndex + 1} with Bottom ${bottomIndex + 1}`);
+      setPopupMessage(`It's a match!`);
       correctSound.play();
     } else {
       const wrongSound = new Audio("https://github.com/praxeds/codepen-chers-closet/blob/f5947469f008c723b9b2aa5be51f2a8cfac0c66a/assets/audio/mixkit-wrong-long-buzzer-954.wav?raw=true");
       // Jika tidak cocok, tampilkan pesan "No match!"
-      setPopupMessage(`No match! Top ${topIndex + 1} and Bottom ${bottomIndex + 1}`);
+      setPopupMessage(`No match!`);
       wrongSound.play();
     }
     setIsPopUpVisible(true);
@@ -36,7 +36,7 @@ const CluelessContainer = () => {
   };
 
   return (
-    <div className="app w-full flex relative">
+    <div className="app w-full flex relative z-20">
       <Image src={leopardIMG} alt="bgleopard" objectFit="cover" className="absolute w-full h-full" />
       <button className="bigBtn z-20" onClick={checkMatch}>
         Browse

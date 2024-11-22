@@ -10,8 +10,12 @@ type PopUpProps = {
 const PopupMessages: React.FC<PopUpProps> = ({ message, isVisible }) => {
   return (
     <div className={`popup relative w-full h-full mx-auto ${isVisible ? "visible" : ""}`} id="popUpDiv">
-      <p id="popup absolute">{message}</p>
-      <div id="popUpShadow"></div>
+      <p id="popup" className="absolute flex items-center justify-center">
+        {message}
+      </p>
+      <div id="popUpShadow" className="flex items-center justify-center">
+        {message}
+      </div>
     </div>
   );
 };

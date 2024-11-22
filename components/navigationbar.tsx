@@ -40,10 +40,10 @@ export default function NavigationBar() {
   return (
     <Disclosure as="nav" className="navigationbar bg-transparent w-full fixed top-0 left-0 z-50">
       <div className="w-full">
-        <motion.div className="discount-nav bg-black text-white py-2 px-4 text-center z-30" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
+        <motion.div className="discount-nav bg-black text-white px-4 h-full text-center z-30" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
           <p className="discount-text">Enjoy 30% off your first purchase with the code: ADORA22!</p>
         </motion.div>
-        <motion.div className="nav-adora w-full relative flex h-20 py-6 items-center justify-between self-stretch border-b border-black bg-white" initial={{ y: 0 }} animate={{ y: isScrollingUp ? 0 : -80 }} transition={{ duration: 0.3 }}>
+        <motion.div className="nav-adora w-full relative flex h-10 py-6 items-center justify-between self-stretch border-b border-black bg-white" initial={{ y: 0 }} animate={{ y: isScrollingUp ? 0 : -80 }} transition={{ duration: 0.3 }}>
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button */}
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -57,7 +57,7 @@ export default function NavigationBar() {
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex gap-4 space-x-3">
                 {navigation.map((item) => (
-                  <a className="menu-list" key={item.name} href={item.href}>
+                  <a className="menu-list z-50" key={item.name} href={item.href}>
                     {item.name}
                   </a>
                 ))}
