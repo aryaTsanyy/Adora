@@ -163,41 +163,8 @@ body {
   line-height: 100%;
   color: var(--black);
 }
-.scrolling-text {
-  position: relative;
-  overflow: hidden;
-  background-color: black;
-  color: white;
-  padding: 20px 0;
-  display: flex;
-  white-space: nowrap;
-}
-.scroll-item {
-  margin: 0;
-  padding: 0;
-  gap: 12px;
-  justify-content: center;
-}
 .topSecond {
   height: 300px;
-}
-.scroll-content {
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-}
-
-.scroll-content span {
-  margin: 0 16px;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.scroll-item span {
-  font-family: "CabinetGrotesk-Regular";
-  font-size: 36px;
-  line-height: 140%;
-  color: white;
 }
 .second-item p {
   font-size: 46px;
@@ -400,6 +367,10 @@ body {
   border: 1px solid var(--primary-secondary-primary-black, #000);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(4px);
+}
+.collab-btn button:hover {
+  background-color: white;
+  transition: all ease-in-out 0.3s;
 }
 .discount-section {
   height: auto;

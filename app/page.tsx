@@ -1,11 +1,12 @@
 /** @format */
 
-import { Hero, InfiniteScrollAnimationPage } from "@/components";
+import { Hero } from "@/components";
 import { Navigationbar } from "@/components";
 import { Categorycard, CategoryGrid } from "@/components/category";
 import { Clueless, CollabBottom, Collabtop } from "@/components/collaboration";
 import { DiscountSection } from "@/components/discount";
 import { FooterSection } from "@/components/footer";
+import { SectionInfinite } from "@/components/infiniteScrollAnimation";
 import { Title } from "@/components/newdrop";
 import { NewdropContainer } from "@/components/newdrop";
 import { Card, TopSecond, Typer } from "@/components/second";
@@ -18,7 +19,7 @@ export default function Home() {
       <Navigationbar />
       <section className="hero-section min-h-screen">
         <Hero />
-        <InfiniteScrollAnimationPage />
+        <SectionInfinite />
       </section>
       <section className="second-section h-auto w-full px-10 py-36 flex-col justify-center items-center">
         <TopSecond />

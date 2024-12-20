@@ -7,15 +7,9 @@ const typer = () => {
   return (
     <div className="second-item relative flex items-center">
       <p className="second-text text-center relative">
-        <Typewriter
-          words={["Discover Adora’s curated collections that beautifully blend the latest trends with timeless elegance, designed to empower every woman to feel confident and beautiful every day."]}
-          loop={true}
-          cursor={true}
-          cursorStyle="|"
-          typeSpeed={70}
-          deleteSpeed={50}
-          delaySpeed={75}
-        />
+        Discover Adora’s curated collections that beautifully blend the latest trends with timeless elegance, designed to empower every woman to feel
+        <Typewriter words={[" Confident", " Beautiful"]} loop={true} cursor={true} cursorStyle="|" typeSpeed={200} deleteSpeed={100} delaySpeed={300} />
+        every day.
       </p>
     </div>
   );
