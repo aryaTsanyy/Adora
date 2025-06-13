@@ -1,40 +1,75 @@
 <!-- @format -->
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍 🛒 ADORA WEBSITE
+
+[![ADORA] (https://adora-bm230z7cj-aryatsanyys-projects.vercel.app/)]
+
+---
 
 ![alt text](image.png)
 
-## Getting Started
+## About This Project
 
-First, run the development server:
+**Adora** is a modern ecommerce landing page website built as a collaborative project during my internship at Potara Studio.  
+This landing page was developed together with my partners **Desmonda Varel** and **Shabina** at Potara Studio, where I contributed as a Front-end Developer.  
+Our goal was to create a visually appealing, and interactive shopping experience using the latest web technologies.
+
+One of the unique features of this project is a **mini game** where users can play a matching outfit game—allowing you to mix and match different clothing items to create your own style.
+
+The project showcases advanced UI/UX, custom animated cursors, smooth scrolling, and a mini game where u can dress up your outfit. layout powered by Next.js and Tailwind CSS.
+
+---
+
+## 🚀 Live Website
+
+👉🏻 [ADORA](https://adora.vercel.app)
+
+---
+
+## ✨ Features
+
+- **Modern UI**  
+  Elegant design, smooth animations, and a built-in mini game.
+- **Mini Game: Matching Outfit**
+  Play a fun matching outfit game to mix and match different clothing items and create your own style.
+- **Custom Animated Cursor**  
+  Elastic blob cursor with blend and glow effects.
+- **Infinite Scroll Animation**  
+  Dynamic sections with horizontal and vertical scroll effects.
+- **Tailwind CSS**  
+  Fast and consistent styling using utility-first CSS.
+- **Local Fonts & Next.js Optimization**
+  Uses local fonts with Next.js font optimization.
+- **Automatic Deployment to Vercel**  
+  Every push to GitHub is instantly deployed to the live website.
+
+---
+
+## 🛠️ Getting Started
+
+To run this project locally:
 
 ```bash
+git clone https://github.com/your-username/adora.git
+cd adora
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🤝 Collaboration
 
-## Learn More
+This project was built in collaboration with **Desmonda Varel** as UI/UX Designer and **Shabina** as UI/UX Designer at Potara Studio during my internship as a Front-end Developer.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📄 License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+MIT License © 2025 [Arya](https://github.com/aryaTsanyy)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**If you like this project, please give it a ⭐ on GitHub!**
