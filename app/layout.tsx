@@ -5,12 +5,12 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const CabinetGrotesk = localFont({
-  src: "/fonts/CabinetGrotesk/CabinetGrotesk-Regular.otf",
+  src: "/public/fonts/CabinetGrotesk/CabinetGrotesk-Regular.otf",
   variable: "--font-Cabinet-Grotesk",
   weight: "400",
 });
 const AeonikRegular = localFont({
-  src: "/fonts/aeonik/Aeonik-Regular.otf",
+  src: "/public/fonts/aeonik/Aeonik-Regular.otf",
   variable: "--font-Aeonik-Regular",
   weight: "400",
 });
