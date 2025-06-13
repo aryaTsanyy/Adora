@@ -1,4 +1,4 @@
 /** @format */
 
-import FooterBg from "./footerbg.png";
-export { FooterBg };
+import NewJeans from "./newjeans.png";
+export { NewJeans };

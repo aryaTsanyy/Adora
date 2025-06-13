@@ -138,10 +138,13 @@ body {
 }
 .fashionsvg {
   top: 50%;
+  left: 16%;
+  z-index: 15;
 }
 .adorasvg {
   top: 70%;
-  right: 0%;
+  right: 16%;
+  z-index: 15;
 }
 .hero-text {
   z-index: -6;
@@ -193,14 +196,18 @@ body {
   transform: translateY(0%);
   transition: transform 0.4s ease;
 }
+.card-content:not(:hover) .card-layer {
+  transform: translateY(60%);
+  transition: transform 0.4s ease;
+}
 
 .card-content:hover .card-content-right {
-  transform: translateY(-900%);
-  transition: transform 0.3s ease-in-out;
+  transform: translateY(-1000%);
+  transition: transform 0.5s ease-in-out;
 }
 .card-content:not(:hover) .card-content-right {
   transform: translateY(0);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 .card-layer {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
@@ -225,13 +232,25 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
+.card-newdrop:not(:hover) .imgfirst {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
 .card-newdrop:hover .imghover {
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
+.card-newdrop:not(:hover) .imghover {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
 .card-newdrop:hover {
   transform: translateY(-5%);
   transition: transform 0.3s ease-in-out;
+}
+.card-newdrop:not(:hover) {
+  transform: translateY(0);
+  transition: transform 0.5s ease-in-out;
 }
 .arrow-card {
   width: 56px;
@@ -283,14 +302,18 @@ body {
   transform: translateX(-5%);
   transition: transform 0.3s ease-in-out;
 }
+.explore-link:not(:hover) {
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
 .explore-link:hover::after {
   left: 0;
   width: 70%;
 }
 
 .explore-link:not(:hover)::after {
-  left: 100%;
-  width: 0;
+  left: 0;
+  width: 100%;
 }
 
 .newdrop-text p {

@@ -3,7 +3,7 @@
 import React from "react";
 import Emailaddress from "./emailaddress";
 import Image from "next/image";
-import { FooterBg } from "@/app/images/footer";
+import { NewJeans } from "@/app/images/footer";
 
 const footerSection = () => {
   return (
@@ -46,7 +46,7 @@ const footerSection = () => {
         </div>
       </div>
       <div className="right-footer flex-grow items-end justify-end relative">
-        <Image src={FooterBg} alt="bg" objectFit="cover" className="h-full absolute" />
+        <Image src={NewJeans} alt="bg" objectFit="fill" className="h-full absolute" />
         <div className="rightfooterContent absolute z-10 left-5 bottom-5 flex items-center gap-1">
           <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
             <path
