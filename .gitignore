@@ -39,7 +39,5 @@ yarn-error.log*
 *.tsbuildinfo
 adora.pub
 
-# SS
-/ssGit
 
 
