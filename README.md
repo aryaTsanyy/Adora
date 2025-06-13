@@ -68,7 +68,7 @@ This project was built in collaboration with **Desmonda Varel** as UI/UX Designe
 
 ## 📄 License
 
-MIT License © 2025 [Arya](https://github.com/aryaTsanyy)
+MIT License © 2025 [AryaTsanyy](https://github.com/aryaTsanyy)
 
 ---
 
