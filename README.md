@@ -6,7 +6,7 @@
 
 ---
 
-![alt text](image.png)
+![alt text](ssGit/image.png)
 
 ## About This Project
 
@@ -22,7 +22,7 @@ The project showcases advanced UI/UX, custom animated cursors, smooth scrolling,
 
 ## 🚀 Live Website
 
-👉🏻 [ADORA](https://adora.vercel.app)
+👉🏻 [Live Website Adora](https://adora.vercel.app)
 
 ---
 
@@ -32,6 +32,7 @@ The project showcases advanced UI/UX, custom animated cursors, smooth scrolling,
   Elegant design, smooth animations, and a built-in mini game.
 - **Mini Game: Matching Outfit**
   Play a fun matching outfit game to mix and match different clothing items and create your own style.
+  ![Mini Game](ssGit/Screen%20Shot%202025-06-13%20at%2015.12.27.png>)
 - **Custom Animated Cursor**  
   Elastic blob cursor with blend and glow effects.
 - **Infinite Scroll Animation**  
@@ -50,7 +51,7 @@ The project showcases advanced UI/UX, custom animated cursors, smooth scrolling,
 To run this project locally:
 
 ```bash
-git clone https://github.com/your-username/adora.git
+git clone https://github.com/aryaTsanyy/adora.git
 cd adora
 npm install
 npm run dev
