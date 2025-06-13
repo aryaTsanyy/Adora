@@ -32,7 +32,7 @@ The project showcases advanced UI/UX, custom animated cursors, smooth scrolling,
   Elegant design, smooth animations, and a built-in mini game.
 - **Mini Game: Matching Outfit**
   Play a fun matching outfit game to mix and match different clothing items and create your own style.
-  ![Mini Game](ssGit/Screen%20Shot%202025-06-13%20at%2015.12.27.png>)
+  ![Mini Game](ssGit/minigames.png>)
 - **Custom Animated Cursor**  
   Elastic blob cursor with blend and glow effects.
 - **Infinite Scroll Animation**  
