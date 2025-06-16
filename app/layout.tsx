@@ -5,12 +5,12 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const CabinetGrotesk = localFont({
-  src: "/public/fonts/CabinetGrotesk",
+  src: "/public/fonts/CabinetGrotesk/CabinetGrotesk-Regular.otf",
   variable: "--font-Cabinet-Grotesk",
   weight: "400",
 });
 const AeonikRegular = localFont({
-  src: "/public/fonts/aeonik",
+  src: "/public/fonts/aeonik/Aeonik-Regular.otf ",
   variable: "--font-Aeonik-Regular/",
   weight: "400",
 });
@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${CabinetGrotesk.variable} ${AeonikRegular.variable} antialiased`}>{children}</body>
+      <body className={`${CabinetGrotesk} ${AeonikRegular} antialiased`}>{children}</body>
     </html>
   );
 }
