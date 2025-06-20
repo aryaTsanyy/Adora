@@ -2,7 +2,7 @@
 
 # 🛍 🛒 ADORA WEBSITE
 
-[![ADORA] (https://adora-bm230z7cj-aryatsanyys-projects.vercel.app/)]
+![ADORA] (https://adora-bm230z7cj-aryatsanyys-projects.vercel.app/)
 
 ---
 
